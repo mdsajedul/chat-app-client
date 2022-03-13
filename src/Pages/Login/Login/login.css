@@ -1,0 +1,7 @@
+.input-field{
+    border-bottom: 2px solid #324A5E;
+    background-color: #FAFAFA;
+}
+.input-field:focus{
+    outline-color: #324A5E;
+}
