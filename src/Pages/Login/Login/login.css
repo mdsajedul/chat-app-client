@@ -1,7 +1,14 @@
 .input-field{
     border-bottom: 2px solid #324A5E;
     background-color: #FAFAFA;
+    transition: outline ease-in-out .20s;
+    outline: none;
 }
 .input-field:focus{
-    outline-color: #324A5E;
+    /* outline: none !important; */
+    outline: 2px solid #324A5E;
+    
+}
+.login-panel{
+    position: absolute;
 }

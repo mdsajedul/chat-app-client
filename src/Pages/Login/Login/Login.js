@@ -20,21 +20,24 @@ const Login = () => {
                     </div>
                     <div className='  p-5 rounded flex justify-center  '>
                         
-                        <div>
-                            <h1 className='text-3xl'>Login</h1>
+                        <div className='login-panel'>
+                            <h1 className='text-3xl text-[#324A5E]'>Login</h1>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <div className='mt-3'>
-                                    <FontAwesomeIcon className='absolute p-2' icon={faUser}/>
+                                <div className='mt-3 p-2'>
+                                    <FontAwesomeIcon className='absolute p-2 text-[#324A5E]' icon={faUser}/>
                                     <input type="text" className='pl-8 py-1 rounded-lg input-field' defaultValue="" placeholder='Type your username' {...register("username",{required:true})} />
                                 </div>
-                                <div className='mt-3'>
-                                <FontAwesomeIcon className='absolute p-2' icon={faLock}/>
+                                <div className='mt-3 p-2'>
+                                <FontAwesomeIcon className='absolute p-2 text-[#324A5E]' icon={faLock}/>
                                     <input type="password" className='pl-8 py-1 rounded-lg input-field' placeholder='Type your password' {...register("password", { required: true })} />
                                 </div>
         
                                 {errors.exampleRequired && <span>This field is required</span>}
+                                <div className='text-right'>
+                                    <p className='text-sm'>Forget Password?</p>
+                                </div>
                                 
-                                <div className='mt-3'>
+                                <div className='mt-3 p-2'>
                                     <button className='w-full bg-[#324A5E] p-1 rounded-lg text-[#FAFAFA]'  type="submit">Login</button>
                                 </div>
                             </form>
