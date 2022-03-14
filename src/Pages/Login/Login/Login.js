@@ -10,9 +10,9 @@ const Login = () => {
     const onSubmit = data => console.log(data);
 
     return (
-        <div className='containerflex items-center bg-neutral-200'>
-            <div className='h-screen flex justify-center items-center '>
-                <div className='grid grid-cols-2 content-center w-3/4 h-3/4 bg-neutral-50 bg-neutral-200 rounded-lg'>
+        // <div className='containerflex items-center bg-neutral-200'>
+        //     <div className='h-screen flex justify-center items-center '>
+                <div className='h-full grid grid-cols-2 content-center'>
                     <div>
                         <div className=' m-auto flex justify-center '>
                             <img src={chatIcon} alt="" width="300px" />
@@ -42,9 +42,6 @@ const Login = () => {
                     </div>
                 </div>
                 
-                
-            </div>
-        </div>
     );
 };
 
